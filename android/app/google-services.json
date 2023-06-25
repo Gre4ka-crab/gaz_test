@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "664059180064",
+    "project_id": "test-4873f",
+    "storage_bucket": "test-4873f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:664059180064:android:df6d575ae9d01278b3f845",
+        "android_client_info": {
+          "package_name": "com.example.gaz_test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "664059180064-lkrl2tebdlgetg0lg4p9810hpiqp98i8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAbq3GvP_vsTCHlgtxO1Nb34M4R6LdhsI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "664059180064-lkrl2tebdlgetg0lg4p9810hpiqp98i8.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "664059180064-37c46fgmhhofv8spc3he4qj8vm03l9qq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.gazTest"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
