@@ -1,6 +1,6 @@
 
 class WeatherEntity {
-  final int? dt;
+  final DateTime? dt;
   final WeatherMainEntity? main;
   final List<WeatherDetailEntity>? weather;
   final CloudsEntity? clouds;

@@ -4,10 +4,10 @@ import 'package:gaz_test/core/error/failure.dart';
 import 'package:gaz_test/core/usecase/usecase.dart';
 import 'package:gaz_test/domain/repositories/user_repository.dart';
 
-class LogIn implements UseCase<void, ParamsLogIn> {
+class LogInUseCase implements UseCase<void, ParamsLogIn> {
   UserRepository userRepository;
 
-  LogIn({required this.userRepository});
+  LogInUseCase({required this.userRepository});
 
   @override
   Future<Either<Failure, void>> call(ParamsLogIn params) async {

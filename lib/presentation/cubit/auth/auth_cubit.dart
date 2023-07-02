@@ -1,10 +1,10 @@
 import 'package:bloc/bloc.dart';
-import 'package:gaz_test/domain/use_cases/sig_in_use_cases.dart';
+import 'package:gaz_test/domain/use_cases/sig_in_use_case.dart';
 
 part 'auth_state.dart';
 
 class AuthCubit extends Cubit<AuthState> {
-  final LogIn logInUseCase;
+  final LogInUseCase logInUseCase;
 
   AuthCubit({required this.logInUseCase}) : super(AuthInitial());
 

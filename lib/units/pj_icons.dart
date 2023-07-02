@@ -9,10 +9,10 @@ class PjIcons{
   static String get cloudSun => 'assets/icons/CloudSun.svg';
   static String get sun => 'assets/icons/Sun.svg';
 
-  static String get bigCloudLightning => 'assets/icons/weather_type1_big_icon.svg';
-  static String get bigCloudBigRain => 'assets/icons/weather_type5_big_icon.svg';
-  static String get bigCloudRain => 'assets/icons/weather_type3_big_icon.svg';
-  static String get bigCloudSnow => 'assets/icons/weather_type4_big_icon.svg';
-  static String get bigCloudSun => 'assets/icons/weather_type6_big_icon.svg';
-  static String get bigSun => 'assets/icons/weather_type2_big_icon.svg';
+  static String get bigCloudLightning => 'assets/icons/weather_type1_big_icon.png';
+  static String get bigCloudBigRain => 'assets/icons/weather_type5_big_icon.png';
+  static String get bigCloudRain => 'assets/icons/weather_type3_big_icon.png';
+  static String get bigCloudSnow => 'assets/icons/weather_type4_big_icon.png';
+  static String get bigCloudSun => 'assets/icons/weather_type6_big_icon.png';
+  static String get bigSun => 'assets/icons/weather_type2_big_icon.png';
 }

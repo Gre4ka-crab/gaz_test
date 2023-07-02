@@ -18,7 +18,7 @@ class AuthPage extends StatelessWidget {
 
     return BlocConsumer<AuthCubit, AuthState>(
       listener: (BuildContext context, state) {
-        if(state is !AuthLoading){
+        if (state is! AuthLoading) {
           Navigator.pop(context);
         }
 
@@ -26,23 +26,20 @@ class AuthPage extends StatelessWidget {
           if (state.isAuth) Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => const ForecastPage()));
         }
 
-        if(state is AuthError){
+        if (state is AuthError) {
           ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(state.message ?? '')));
         }
 
-        if(state is AuthLoading){
+        if (state is AuthLoading) {
           showDialog(
               barrierDismissible: false,
               context: context,
               builder: (_) {
                 return const LoadingWidget();
-              }
-          );
+              });
         }
-
       },
       builder: (BuildContext context, state) {
-
         return Scaffold(
           body: SafeArea(
             child: Container(
@@ -53,7 +50,12 @@ class AuthPage extends StatelessWidget {
                   SizedBox(height: 48.h),
                   const Text(
                     'Вход',
-                    style: TextStyle(fontSize: 28, fontWeight: FontWeight.w500, color: Color.fromRGBO(43, 45, 51, 1)),
+                    style: TextStyle(
+                      fontSize: 28,
+                      fontWeight: FontWeight.w500,
+                      color: Color.fromRGBO(43, 45, 51, 1),
+                      fontFamily: 'Ubuntu',
+                    ),
                   ),
                   SizedBox(height: 12.h),
                   const Text(
@@ -136,7 +138,7 @@ class _PasswordField extends StatefulWidget {
 }
 
 class _PasswordFieldState extends State<_PasswordField> {
-  bool obscure = true;
+  bool obscure = false;
 
   @override
   Widget build(BuildContext context) {
